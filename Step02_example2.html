@@ -35,8 +35,10 @@
 
         document.querySelector("#moveBottomBtn").addEventListener("click",function(){
             //변수에 있는 숫자를 100씩 증가시키고
+            mLeft = mLeft+100;
             mTop = mTop +100;
             //변수에 있는 숫자를 이미지의 위쪽 마진에 적용한다
+            document.querySelector("#kimImg").style.marginLeft = mLeft+"px";
             document.querySelector("#kimImg").style.marginTop = mTop+"px";
         });
 
